@@ -1,0 +1,99 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Estilos para componentes específicos */
+.page-title {
+  margin-bottom: 24px;
+  font-weight: 500;
+  color: #1976d2;
+}
+
+.alert-message {
+  margin-bottom: 16px;
+}
+
+.table-container {
+  margin-top: 16px;
+  overflow-x: auto;
+}
+
+.filter-container {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.dashboard-card {
+  height: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.dashboard-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.dashboard-icon {
+  font-size: 48px !important;
+  margin-bottom: 16px;
+}
+
+.calendar-container {
+  height: 600px;
+  padding: 16px;
+}
+
+/* Estilos para a página de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 16px;
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-icon {
+    font-size: 36px !important;
+  }
+  
+  .calendar-container {
+    height: 400px;
+  }
+}
